@@ -182,16 +182,14 @@ Return ONLY the complete HTML document. No preamble, no explanation."""
 
 
 def get_google_creds() -> Credentials:
+    # Don't pass scopes here — they're already encoded in the refresh token.
+    # Passing mismatched scopes causes invalid_scope errors.
     creds = Credentials(
         token=None,
         refresh_token=os.environ["GOOGLE_REFRESH_TOKEN"],
         token_uri="https://oauth2.googleapis.com/token",
         client_id=os.environ["GOOGLE_CLIENT_ID"],
         client_secret=os.environ["GOOGLE_CLIENT_SECRET"],
-        scopes=[
-            "https://www.googleapis.com/auth/calendar",
-            "https://www.googleapis.com/auth/gmail.modify",
-        ],
     )
     creds.refresh(Request())
     return creds
