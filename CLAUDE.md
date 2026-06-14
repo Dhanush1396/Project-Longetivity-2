@@ -17,7 +17,7 @@ Every morning the user opens their calendar and finds a 30-min block with a focu
 |---|---|---|
 | Firecrawl | Web scraping — articles, Substack, websites | Connected via MCP |
 | Apify | Structured extraction — YouTube, journals | Connected via MCP |
-| Google Docs | Create daily study doc with material + resources | Via Google API |
+| Notion | Create daily study page with material + resources | Needs API token |
 | Google Calendar | Create 30-min daily event with Doc link | Connected via MCP |
 | Gmail | Send daily email with Doc link to user | Connected via MCP |
 
@@ -25,9 +25,9 @@ Every morning the user opens their calendar and finds a 30-min block with a focu
 Wide net across all formats — PubMed, bioRxiv, Substack longevity writers, YouTube (Huberman Lab, Peter Attia, Bryan Johnson, etc.), news articles, research blogs, longevity-focused websites. Priority: cutting-edge, peer-reviewed or well-sourced.
 
 **Delivery Payload:**
-1. **Google Doc** — created fresh each day, titled `Longevity Study — Day {N}: {Topic}`, containing compiled study material + cited resource links
-2. **Google Calendar** — 30-min event at 7:00 AM (default, configurable) with Doc link in description
-3. **Gmail** — daily email to `dhanushpeddemoni.work@gmail.com` with Doc link and topic summary
+1. **Notion page** — created fresh each day under a "Longevity Study Material" database, titled `Day {N}: {Topic}`, containing compiled study material + cited resource links
+2. **Google Calendar** — 30-min event at 7:00 AM IST with Notion page link in description
+3. **Gmail** — daily email to `dhanushpeddemoni.work@gmail.com` with Notion link and topic summary
 
 **Topic Progression:**
 Structured curriculum starting from fundamentals, advancing daily:
@@ -96,8 +96,8 @@ _Pending_
 ### Output (what gets delivered)
 ```json
 {
-  "google_doc_url": "https://docs.google.com/...",
-  "google_doc_id": "string",
+  "notion_page_url": "https://notion.so/...",
+  "notion_page_id": "string",
   "calendar_event_id": "string",
   "calendar_event_link": "string",
   "gmail_sent": true,
