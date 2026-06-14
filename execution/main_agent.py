@@ -190,7 +190,7 @@ def get_google_creds() -> Credentials:
         client_secret=os.environ["GOOGLE_CLIENT_SECRET"],
         scopes=[
             "https://www.googleapis.com/auth/calendar",
-            "https://www.googleapis.com/auth/gmail.compose",
+            "https://www.googleapis.com/auth/gmail.modify",
         ],
     )
     creds.refresh(Request())
