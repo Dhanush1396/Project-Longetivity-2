@@ -201,13 +201,15 @@ def create_calendar_event(creds: Credentials, entry: dict, html_content: str) ->
     day = entry["day"]
     topic = entry["topic"]
 
-    # Tomorrow at 7:00 AM IST (we run at 6:45 AM to prepare for 7:00 AM)
-    now_ist = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
-    event_date = now_ist.date()
+    IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    now_ist = datetime.datetime.now(IST)
+    # If it's already past 7 AM IST, schedule for tomorrow; otherwise today
+    today_7am = now_ist.replace(hour=7, minute=0, second=0, microsecond=0)
+    event_date = (now_ist + datetime.timedelta(days=1)).date() if now_ist > today_7am else now_ist.date()
     start_ist = datetime.datetime.combine(
         event_date,
         datetime.time(7, 0, 0),
-        tzinfo=datetime.timezone(datetime.timedelta(hours=5, minutes=30)),
+        tzinfo=IST,
     )
     end_ist = start_ist + datetime.timedelta(minutes=30)
 
