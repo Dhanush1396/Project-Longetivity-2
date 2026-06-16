@@ -1,7 +1,7 @@
 {
-  "day": 4,
-  "last_run": "2026-06-15T06:39:41.711654Z",
-  "last_topic": "Telomeres & Telomerase \u2014 The Hayflick Limit & Beyond",
+  "day": 5,
+  "last_run": "2026-06-16T06:45:19.219826Z",
+  "last_topic": "Cellular Senescence & the SASP",
   "history": [
     {
       "day": 1,
@@ -30,6 +30,13 @@
       "calendar_event_id": "45k668cljbe3mjptsn8q5d4dn0",
       "gmail_draft_id": "",
       "delivered": "2026-06-15T06:39:41.711660Z"
+    },
+    {
+      "day": 4,
+      "topic": "Cellular Senescence & the SASP",
+      "calendar_event_id": "sqfv71jo5hulep8h0erj8klp44",
+      "gmail_draft_id": "",
+      "delivered": "2026-06-16T06:45:19.219838Z"
     }
   ]
 }
