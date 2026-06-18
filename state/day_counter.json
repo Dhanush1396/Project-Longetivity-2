@@ -1,7 +1,7 @@
 {
-  "day": 6,
-  "last_run": "2026-06-17T06:28:48.917691Z",
-  "last_topic": "mTOR: The Central Hub of Aging Biology",
+  "day": 7,
+  "last_run": "2026-06-18T06:11:35.404180Z",
+  "last_topic": "AMPK & Sirtuins \u2014 The Energy Sensors of Longevity",
   "history": [
     {
       "day": 1,
@@ -44,6 +44,13 @@
       "calendar_event_id": "gblpt19q1slhbqfna7a0d78t68",
       "gmail_draft_id": "",
       "delivered": "2026-06-17T06:28:48.917703Z"
+    },
+    {
+      "day": 6,
+      "topic": "AMPK & Sirtuins \u2014 The Energy Sensors of Longevity",
+      "calendar_event_id": "hg3bkjqgsega3mvq85cgp9hm8s",
+      "gmail_draft_id": "",
+      "delivered": "2026-06-18T06:11:35.404189Z"
     }
   ]
 }
