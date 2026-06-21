@@ -1,7 +1,7 @@
 {
-  "day": 8,
-  "last_run": "2026-06-20T05:45:21.285449Z",
-  "last_topic": "Mitochondrial Dysfunction \u2014 The Energy Crisis of Aging",
+  "day": 9,
+  "last_run": "2026-06-21T06:19:55.561802Z",
+  "last_topic": "Proteostasis & Autophagy \u2014 The Cell's Garbage System",
   "history": [
     {
       "day": 1,
@@ -58,6 +58,13 @@
       "calendar_event_id": "q68f3olc0mmgd9p5db6jagrbo0",
       "gmail_draft_id": "",
       "delivered": "2026-06-20T05:45:21.285459Z"
+    },
+    {
+      "day": 8,
+      "topic": "Proteostasis & Autophagy \u2014 The Cell's Garbage System",
+      "calendar_event_id": "91jcbk8vi5g11qkbse7bqijsa0",
+      "gmail_draft_id": "",
+      "delivered": "2026-06-21T06:19:55.561812Z"
     }
   ]
 }
